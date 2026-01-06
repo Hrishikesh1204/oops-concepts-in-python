@@ -1,0 +1,70 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPzRjko54PMHcpoQmEygbjT",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Hrishikesh1204/oops-concepts-in-python/blob/main/circle%20program\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8oIm5DlQoyIx",
+        "outputId": "b4ed0182-da54-4113-c2eb-af81b852d34c"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1962.5\n",
+            "157.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "class circle:\n",
+        "  def __init__(self,radius):\n",
+        "    self.radius=radius\n",
+        "  def area(self):\n",
+        "    return 3.14*self.radius**2\n",
+        "  def perimeter(self):\n",
+        "    return 2*3.14*self.radius\n",
+        "c1=circle(25)\n",
+        "print(c1.area())\n",
+        "print(c1.perimeter())"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "5P5OSVxMAMH8"
+      }
+    }
+  ]
+}
