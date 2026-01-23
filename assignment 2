@@ -1,0 +1,16 @@
+class Rectangle:
+    def __init__(self,length,breadth):
+        self.length=length
+        self.breadth=breadth
+    def area(self):
+        area=self.length*self.breadth
+        return area
+    def perimeter(self):
+        perimeter=2*(self.length+self.breadth)
+        return perimeter
+        print("enter the length and breadth of rectangle")
+my_rectangle = Rectangle(5, 3)
+calculated_area = my_rectangle.area()
+calculated_perimeter = my_rectangle.perimeter()
+print(f"The area of the rectangle is: {calculated_area}")
+print(f"The perimeter of the rectangle is: {calculated_perimeter}")
