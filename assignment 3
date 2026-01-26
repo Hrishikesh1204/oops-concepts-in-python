@@ -1,0 +1,13 @@
+class Addition:
+    def __init__(self, first_number, second_number):
+        self.first_number = first_number
+        self.second_number = second_number
+
+    def add(self):
+
+        result = self.first_number + self.second_number
+        print(f"The sum is: {result}")
+
+
+my_addition = Addition(10, 5)
+my_addition.add()
