@@ -1,0 +1,9 @@
+class CAR:
+  wheels=4
+  def __init__(self,brand):
+    self.brand=brand
+    print(self.brand)
+car1= CAR("BMW")    
+car2= CAR("FERRARI")
+print( car1.wheels,car1.brand)
+print(car2.wheels,car2.brand)
