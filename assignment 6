@@ -1,0 +1,29 @@
+class Vehicle:
+    def __init__(self, brand, year):
+        self.brand = brand
+        self.year = year
+
+    def display_info(self):
+        """Displays general information about the vehicle."""
+        return f"This is a {self.year} {self.brand} vehicle."
+
+
+class Car(Vehicle):
+    def __init__(self, brand, year, model, num_doors):
+        super().__init__(brand, year) # Call the parent class's constructor
+        self.model = model
+        self.num_doors = num_doors
+
+    def display_info(self):
+        # return f"{base_info} It's a {self.model} with {self.num_doors} doors."
+        return f"This is a {self.year} {self.brand} {self.model} with {self.num_doors} doors."
+
+
+# --- Demonstration ---
+print("\n--- Vehicle Object ---")
+my_vehicle = Vehicle("Generic Brand", 2020)
+print(f"Vehicle info: {my_vehicle.display_info()}")
+
+print("\n--- Car Object ---")
+my_car = Car("Toyota", 2023, "Camry", 4)
+print(f"Car info: {my_car.display_info()}") # Calls the overridden method in Car class
