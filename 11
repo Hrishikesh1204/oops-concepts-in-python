@@ -1,0 +1,10 @@
+from os import name
+class MOVIES:
+  count=0
+  def __init__(self,name):
+    self.name=name
+    MOVIES.count+=1
+m1=MOVIES ("DUNE")
+m2=MOVIES("THE BATMAN")
+m3=MOVIES("JUSTICE LEAGUE")
+print("number of objects created:", MOVIES.count)
