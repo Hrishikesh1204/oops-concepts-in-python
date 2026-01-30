@@ -1,0 +1,8 @@
+class Parent:
+  def __init__(self):
+    print("Parents class constructor")
+
+class Child(Parent):
+  def __init__(self):
+    super().__init__()
+    print("child class constructor")
